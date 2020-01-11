@@ -1,0 +1,27 @@
+#JSGF V1.0;
+
+grammar base;
+
+public <allLine> = ([(addTab | removeTab )]* <middleLine> <endingSentence>)*;
+
+<middleLine> = <definitionLine> | <definitionLine> | <functionLine> | <returnLine> | <conditionLine> | <assignationLine> | <withLine> | <forLine> | <whileLine> | <importLine> | <otherLine>;
+<definitionLine> = def <functionName> openParenthesis [<variable> comma]* closeParenthesis colon;
+<functionLine> = <functionCall>;
+<withLine> = with (<functionCall> | <operation>) [as <variable>] colon;
+<whileLine> = while <operation> colon;
+<forLine> = for <variable> in (<functionCall> | <operation>) colon;
+<returnLine> = (return | yield) <operation>;
+<conditionLine> = (if <operation> colon) | (elif <operation> colon);
+<assignationLine> = <variable> equal (<operation>|<functionCall>|<className>);
+<importLine> = (import package) | (from package import variable);
+<otherLine> = break | continue | (try colon) | (except [<variable>] colon) | (finally colon) | (raise <variable>) | (else colon) |  pass;
+
+<functionCall> = [<variable> dot]* <functionName> openParenthesis <operation> [ (comma) <operation>]* closeParenthesis;
+<operation> = [openParenthesis] ((<variable> | <digit>) [(plus|minus|divide|multiply|modulo|equal|([not] in)) (<operation>)]*) [closeParenthesis];
+
+<number> = [<digit>]+;
+<digit> = (  one | two | three | four | five | six | seven | eight | nine);
+<variable> = variable | string;
+<functionName> = function;
+<className> = class;
+<endingSentence> = endLine | endText;

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mémoire</title>
+
+    <link rel="stylesheet" href="/dist/css/memoire.css">
+</head>
+
+<body>
+
+    <textarea style="width:500px;height:500px;"></textarea>
+    <div id="debug-div"></div>
+    <script src="/dist/js/jquery.min.js"></script>
+    <script src="/dist/js/main.js"></script>
+
+    <script src="/dist/js/pocketSphinx/audioRecorder.js"></script>
+    <script src="/dist/js/pocketSphinx/callbackManager.js"></script>
+
+    <script>
+        $(window).load(function(){
+            $("textarea").memoire();
+
+        });
+
+    </script>
+</body>
+
+</html>

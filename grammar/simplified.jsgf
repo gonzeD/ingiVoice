@@ -1,0 +1,33 @@
+#JSGF V1.0;
+
+grammar base;
+
+public <allLine> = ([(addTab | removeTab )]* <middleLine> <endingSentence>)*;
+
+<middleLine> = <definitionLine> | <definitionLine> | <functionLine> | <returnLine> | <conditionLine> | <assignationLine> | <whileLine> | <otherLine>;
+<definitionLine> = def <functionName> openParenthesis [<variable> comma]* closeParenthesis colon;
+<functionLine> = <functionCall>;
+<whileLine> = while variable colon;
+<returnLine> = (return | yield) variable;
+<conditionLine> = (if variable colon) | (elif variable colon);
+<assignationLine> = variable equal (<operation>|<functionCall>);
+<otherLine> = break | continue | (try colon) | (except [<variable>] colon) | (finally colon) | (raise <variable>) | (else colon) |  pass;
+
+<functionCall> = <functionName> openParenthesis [<variable> [ (comma) <variable>]*] closeParenthesis;
+<operation> = (<variable> | <digit>) [(plus|minus|divide|multiply|modulo|equal) (<variable>|<digit>)];
+
+<number> = [<digit>]+;
+<digit> = (  one | two | three | four | five | six | seven | eight | nine);
+<variable> = variable;
+<functionName> = function;
+<className> = class;
+<endingSentence> = endLine | endText;
+
+
+// array operations
+// objects
+// lambda ? (lol)
+// tuple
+// comparator and binary operation
+// naming variable to function
+// class constructor

@@ -1,0 +1,87 @@
+
+.memoireBtn
+{
+    transition:0.3s all ease-in-out;
+    opacity:0;
+    background-color:rgba(20,20,20,0.8);
+    width:40px;
+    height:40px;
+    border : none;
+    outline:none;
+    background-size: contain; 
+    position:absolute;
+    margin-left:-45px;
+    margin-top:5px;
+}
+
+
+.memoireBtn-ready
+{
+    
+    background-image: url("/dist/img/mic.png");
+}
+
+
+.memoireBtn-recording
+{
+    background-image: url("/dist/img/recording.png")
+}
+
+
+
+*:hover .memoireBtn-ready, .memoireBtn-recording
+{
+    opacity:1;
+    cursor:pointer
+}
+
+
+.memoireWarning-container
+{
+    position : fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    background-color:rgba(125,125,125,0.8);
+    display:flex;
+}
+
+.memoireWarning-panel
+{
+    margin:auto;
+    width:50%;
+    min-width:300px;
+    min-height:200px;
+    padding:30px;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+.memoireWarning-btn 
+{
+    flex: 1;
+    border:none;
+    outline:none;
+    transition:0.3s all ease-in-out;
+    margin:10px;
+    padding:15px;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.memoireWarning-btnOk
+{
+    background-color:green;
+}
+.memoireWarning-btnAlmostOk
+{
+    background-color:orange;
+}
+.memoireWarning-btnNo
+{
+    background-color:red;
+}

@@ -1,0 +1,7 @@
+class className colun endLine
+	variable equal five endline
+	def function openParenthesis variable closeParenthesis colun endline
+		function openParenthesis verbatim closeParenthesis endline
+
+class className openParenthesis className closeParenthesis endLine
+	

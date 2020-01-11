@@ -1,0 +1,6 @@
+variable equal openBrackets variable comma variable closeBrackets endline
+variable equal variable dot function openParenthesis variable closeParenthesis endline
+function openParenthesis variable openBrackets variable colun variable closeBrackets closeParenthesis endline
+function openParenthesis variable openBrackets colun variable closeBrackets closeParenthesis endline
+function openParenthesis variable openBrackets variable closeBrackets closeParenthesis endline
+function openParenthesis variable openBrackets colun closeBrackets closeParenthesis endline

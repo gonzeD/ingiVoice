@@ -1,0 +1,33 @@
+{
+  "name": "memoire",
+  "version": "1.0.0",
+  "description": "this is the project for my memoire, coding and using inginious with voice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damien Gonze",
+  "license": "TODO",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.4.9",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.10.1",
+    "karma": "^4.0.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "jquery": "^3.3.1"
+  }
+}

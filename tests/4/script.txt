@@ -1,0 +1,4 @@
+variable equal five endLine
+if variable colon endLine
+  while variable colon endLine
+    return variable endText

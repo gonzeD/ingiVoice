@@ -1,0 +1,97 @@
+.memoireBtn {
+    -webkit-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    background-color: rgba(20,20,20,0.8);
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    margin-left: -45px;
+    margin-top: 5px;
+}
+
+.memoireBtn-ready {
+    background-image: url("/dist/img/mic.png");
+}
+
+.memoireBtn-recording {
+    background-image: url("/dist/img/recording.png");
+}
+
+*:hover .memoireBtn-ready, .memoireBtn-recording {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.memoireWarning-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(125,125,125,0.8);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.memoireWarning-panel {
+    margin: auto;
+    width: 50%;
+    min-width: 300px;
+    max-height: calc(90vh - 60px);
+    padding: 30px;
+    background-color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	overflow:auto;
+	font-family: "Gill Sans", sans-serif;
+	box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.26);
+
+}
+.memoireWarning-panel h1,.memoireWarning-panel h2
+{
+	font-family: "Gill Sans", sans-serif;
+}
+.memoireWarning-btn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: none;
+    outline: none;
+    -webkit-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.memoireWarning-btnOk {
+    background-color: green;
+}
+
+.memoireWarning-btnAlmostOk {
+    background-color: orange;
+}
+
+.memoireWarning-btnNo {
+    background-color: red;
+}

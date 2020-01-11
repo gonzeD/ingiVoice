@@ -1,0 +1,12 @@
+def function openParenthesis variable comma variable comma variable closeParenthesis colun endline
+	variable equal variable multiply 4 minus 3 multiply variable endline
+	return variable endline
+
+def function openParenthesis comma variable closeParenthesis colun endline
+	variable equal zero enline
+	variable equal function openParenthesis variable comma variable comma variable closeParenthesis endline
+	if  variable equal zero colun endline
+		variable equal one endline
+	else colun endline
+		variable equal zero endline
+	return variable endline

@@ -1,0 +1,2 @@
+while 4 equals 6 colon endLine
+variable equals 8 endText

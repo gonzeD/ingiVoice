@@ -1,0 +1,3 @@
+variable equal variable multiply 5 endline
+break endLine
+return variable endText

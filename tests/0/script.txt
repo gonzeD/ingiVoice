@@ -1,0 +1,2 @@
+def function openParenthesis closeParenthesis colon endText
+colon endLine
